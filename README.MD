@@ -12,7 +12,7 @@ classDiagram
     } 
     
     interface navegadorInternet {
-      +exibirPagina(String url)
+      +exibirPagina(url: String)
       +adicionarNovaAba()
       +atualizarPagina()
     }
@@ -24,7 +24,7 @@ classDiagram
     interface reprodutorMusical {
       +tocar()
       +pausar()
-      +selecionarMusica(String musica)
+      +selecionarMusica(musica: String)
     }
 
     Iphone ..|> navegadorInternet
