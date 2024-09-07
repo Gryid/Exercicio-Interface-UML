@@ -7,21 +7,21 @@
 ```mermaid
 classDiagram
     
-    class Iphone {
+    class Iphone implements navegadorInternet, implements aparelhoTelefonico, implements reprodutorMusical {
         -int numeroSerie
     } 
     
-    class navegadorInternet {
+    interface navegadorInternet {
       +exibirPagina(String url)
       +adicionarNovaAba()
       +atualizarPagina()
     }
-    class aparelhoTelefonico {
+    interface aparelhoTelefonico {
       +atender()
       +ligar(String numero)
       +iniciarCorreioVoz()
     }
-    class reprodutorMusical {
+    interface reprodutorMusical {
       +tocar()
       +pausar()
       +selecionarMusica(String musica)
