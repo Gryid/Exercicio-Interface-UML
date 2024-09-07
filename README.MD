@@ -7,7 +7,7 @@
 ```mermaid
 classDiagram
     
-    class Iphone implements navegadorInternet, implements aparelhoTelefonico, implements reprodutorMusical {
+    class Iphone {
         -int numeroSerie
     } 
     
