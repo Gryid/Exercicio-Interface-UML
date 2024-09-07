@@ -12,19 +12,19 @@ classDiagram
     } 
     
     interface navegadorInternet {
-      +exibirPagina(url: String)
+      +exibirPagina()
       +adicionarNovaAba()
       +atualizarPagina()
     }
     interface aparelhoTelefonico {
       +atender()
-      +ligar(String numero)
+      +ligar()
       +iniciarCorreioVoz()
     }
     interface reprodutorMusical {
       +tocar()
       +pausar()
-      +selecionarMusica(musica: String)
+      +selecionarMusica()
     }
 
     Iphone ..|> navegadorInternet
