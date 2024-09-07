@@ -11,17 +11,17 @@ classDiagram
         -int numeroSerie
     } 
     
-    interface navegadorInternet {
+    class navegadorInternet {
       +exibirPagina()
       +adicionarNovaAba()
       +atualizarPagina()
     }
-    interface aparelhoTelefonico {
+    class aparelhoTelefonico {
       +atender()
       +ligar()
       +iniciarCorreioVoz()
     }
-    interface reprodutorMusical {
+    class reprodutorMusical {
       +tocar()
       +pausar()
       +selecionarMusica()
